@@ -13,15 +13,15 @@
       <form id="interes-form">
         <div class="input-group">
           <label for="dinero">Cantidad de dinero:</label>
-          <input type="number" id="dinero" step="0.01" required>
+          <input type="number" id="dinero" step="0.01" required inputmode="decimal" pattern="[0-9]+([,\.][0-9]+)?" placeholder="Introduce la cantidad de dinero">
         </div>
         <div class="input-group">
           <label for="dias">Cantidad de días:</label>
-          <input type="number" id="dias" required>
+          <input type="number" id="dias" required inputmode="decimal" pattern="[0-9]+([,\.][0-9]+)?" placeholder="Introduce la cantidad de días">
         </div>
         <div class="input-group">
           <label for="number">Porcentaje anual de ganancias:</label>
-          <input id="porcentaje" step="0.01" required>
+          <input id="porcentaje" step="0.01" required inputmode="decimal" pattern="[0-9]+([,\.][0-9]+)?" placeholder="Introduce el porcentaje anual">
         </div>
         <button type="submit">Calcular</button>
       </form>
